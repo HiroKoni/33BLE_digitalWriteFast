@@ -2,8 +2,8 @@
 
 namespace nano33BLE_digitalWriteFast
 {
-  constexpr PinName Pin(uint8_t pin){
-    return (PinName)pin;
+  PinName Pin(uint8_t pin){
+    return digitalPinToPinName(pin);
   }
     inline void digitalWriteFast(PinName pinName, PinStatus val)
     {
