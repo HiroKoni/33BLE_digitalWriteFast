@@ -33,6 +33,10 @@ namespace nano33BLE_digitalWriteFast
         };
         return AnalogPinNames[pin];
     }
+    constexpr PinName Pin(uint8_t pin)
+    {
+        return pin < 14 ? D(pin) : A(pin - 14);
+    }
     inline void digitalWriteFast(PinName pinName, PinStatus val)
     {
         if (val)

@@ -13,7 +13,7 @@ Set the pin mode to `OUTPUT` just as you do with `digitalWrite()`.
 pinMode(PIN_NO, OUTPUT);
 ```
 
-Use the `digitalWriteFast()` function instead of `digitalWrite()`. For the first argument, you have to use `PinName` defined in `PinNames.h`. `D()` and `A()` functions are provided for convenience.
+Use the `digitalWriteFast()` function instead of `digitalWrite()`. For the first argument, you have to use `PinName` defined in `PinNames.h`. `D()` and `A()` functions are provided for convenience. `Pin()` could also be used.
 ```c++
 digitalWriteFast(D(13), HIGH); // If you want to set pin D13 to HIGH
 digitalWriteFast(A(0), LOW); // If you want to set pin A0 to LOW
