@@ -12,8 +12,8 @@ void loop()
     unsigned long start_nrf = micros();
     for (int i = 0; i <= 1000; i++)
     {
-        digitalWriteFast(D(2), HIGH);
-        digitalWriteFast(D(2), LOW);
+        digitalWriteFast(Pin(2), HIGH);
+        digitalWriteFast(Pin(2), LOW);
     }
     unsigned long end_nrf = micros();
     unsigned long time = end_nrf - start_nrf;
