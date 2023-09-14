@@ -18,7 +18,7 @@ Use the `digitalWriteFast()` function instead of `digitalWrite()`. For the first
 digitalWriteFast(Pin(i), HIGH);
 ```
 
-The functions are defined in `nano33BLE_digitalWriteFast` namespace. You might want to use `using namespace` to use the functions without specifying the namespace, although it is not recommended especially in a large project.
+The functions are defined in `nano33BLE_digitalWriteFast` namespace. You might want to use `using namespace` to use the functions without specifying the namespace, although it is **not recommended** especially in a large project.
 ```c++
 using namespace nano33BLE_digitalWriteFast;
 ```
