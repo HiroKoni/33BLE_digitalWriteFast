@@ -5,7 +5,7 @@ This library provides a faster `digitalWrite()` function for Arduino Nano 33 BLE
 ## Usage
 Include the hpp file.
 ```c++
-#include <33BLE_digitalWriteFast.hpp>
+#include "33BLE_digitalWriteFast.hpp"
 ```
 
 Set the pin mode to `OUTPUT` just as you do with `digitalWrite()`.
